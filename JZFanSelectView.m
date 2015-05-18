@@ -176,12 +176,12 @@ static const CGFloat kFanScaleAmount = 1.2;
 	[v insertSubview:self.cancelButton belowSubview:f];
 	self.cancelButton.frame = CGRectMake(0, 0, self.baseView.frame.size.width, self.baseView.frame.size.height);
 
-	for (int i = 0; i < index; ++i)
+	for (NSInteger i = 0; i < index; ++i)
 	{
 		[v insertSubview:self.buttons[i] belowSubview:f];
 	}
 	
-	for (int i = self.buttons.count - 1; i > index; --i)
+	for (NSUInteger i = self.buttons.count - 1; i > index; --i)
 	{
 		[v insertSubview:self.buttons[i] belowSubview:f];
 	}
